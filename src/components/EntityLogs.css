@@ -1,0 +1,54 @@
+.entity-logs .table {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.entity-logs .thead {
+    background-color: #f2f2f2;
+}
+
+.entity-logs .tr {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.entity-logs .th,
+.entity-logs .td {
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.entity-logs .th {
+    font-weight: bold;
+}
+
+.entity-logs .td {
+    display: flex;
+    align-items: center;
+}
+
+.entity-logs input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.entity-logs .pagination {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entity-logs .pagination button {
+    margin: 0 5px;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

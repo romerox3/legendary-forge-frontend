@@ -1,0 +1,136 @@
+:root {
+    --color-background: #b59595;
+    --color-text: #000000;
+    --color-accent: #8b8b9e;
+    --color-border: #3d3d4e;
+  }
+
+.world-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#phaser-game {
+    margin-right: 20px;
+}
+
+#phaser-game canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.general-stats, .entities-stats {
+    background-color: white;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.general-stats {
+    width: 30%;
+}
+
+.entities-stats {
+    width: 65%;
+}
+
+.entity-stat {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.entity-charts {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+    }
+
+    .general-stats, .entities-stats {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.gene-distribution {
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.entity-charts {
+    margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+    .stats-container {
+        flex-direction: column;
+    }
+
+    .general-stats, .entities-stats, .gene-distribution {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.react-tabs {
+    width: 100%;
+    min-height: 400px; /* Ajusta este valor según tus necesidades */
+}
+
+.react-tabs__tab-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #ffe6e6;
+}
+
+.react-tabs__tab {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+
+.react-tabs__tab--selected {
+    border-bottom: 2px solid #000;
+}
+
+.entity-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.entity-table th, .entity-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.entity-table th {
+    background-color: #ffe6e6;
+}
+
+.entity-table tr {
+    background-color: #ffffff;
+}
+
+.entity-table tr:hover {
+    background-color: #e6e6e6;
+}

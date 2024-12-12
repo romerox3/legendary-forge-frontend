@@ -1,0 +1,63 @@
+:root {
+  --color-background: #ffffff;
+  --color-text: #e6e6e6;
+  --color-accent: #8b8b9e;
+  --color-border: #3d3d4e;
+}
+
+body, .container, .navbar, .btn {
+  font-family: 'Cinzel', serif !important;
+}
+
+body {
+  background-color: var(--color-background) !important;
+  color: var(--color-text) !important;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn {
+  background-color: var(--color-accent);
+  border: none;
+  color: var(--color-text);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
+
+.ornament {
+  fill: var(--color-accent);
+  stroke: var(--color-accent);
+  stroke-width: 2;
+}
+
+.battle-scene {
+  border: 2px solid var(--color-border);
+  box-shadow: 0 0 10px var(--color-accent);
+}
+
+.character-portrait {
+  border: 2px solid var(--color-border);
+  border-radius: 50%;
+  overflow: hidden;
+}
